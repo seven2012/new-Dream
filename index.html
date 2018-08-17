@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        /* 测试样式 */
+        body{
+            margin:0;
+            padding:0;
+        }
+
+        .test {
+            height: 70vh;
+            width: 80vw;
+            margin: 6vh 10vw;
+            border: 1px solid blue;
+        }
+
+        img {
+            width: 200px;
+            height: 200px;
+            background: #ccc;
+        }
+
+        /* 正式样式 */
+
+        #families {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        #families div {
+            width: 45%;
+        }
+
+        #families img {
+            display: block;
+            width: 100%;
+        }
+        .textDetail p{
+            margin:0;
+        }
+        #footer>div{
+            width:20%;
+        }
+        #footer>div.company div{
+            display:flex;
+            width:20px;
+            height:20px;
+            margin:0;
+        }
+        #footer>div.company div a{
+            margin-left:5px;
+        }
+        #footer>div.company div img{
+            width:100%;
+            height:100%;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav></nav>
+    <!-- part1 slider1-->
+    <section class="test">
+
+    </section>
+    <!-- part2 what's dreamlight-->
+    <section class="test"  style="">
+        <h2>What's dreamlight</h2>
+        <p>Dreamlight is a creative smart system to help you get faster enhanced sleep and it can create an ideal atmosphere
+            to help you meditate.</p>
+        <div id="families">
+
+            <div>
+                <img src="" alt="pic1">
+                <p>We use three proven effective ways to make users fall asleep faster.</p>
+                <ul>
+                    <li>Orange light to guide your breathing, help you to focus and fall asleep.</li>
+                    <li>Stereo Bluetooth speakers, gives you the sound of nature, white noise, light music or any other music
+                        you like which makes you feel immersed in a real nature environment.</li>
+                    <li>Vocal hypnosis therapy, a soft voice leads you to relax and fall asleep naturally.</li>
+                </ul>
+                <p>These three features could work separately or together, so you have multiple choices to find your favorite
+                    way
+                </p>
+            </div>
+            <div>
+                <img src="" alt="pic2">
+                <p>Dreamlight Pro is a helpful device to assist your meditation. It’s a perfect fit for your face, keep your
+                    eyes open and you will feel that you are in an isolated place. Mindfulness breathing lights lead you
+                    to focus on your breathing, meditation music helps to generate a Zen chamber and the training program
+                    we are working on will help you practice meditation efficiently.
+                </p>
+            </div>
+
+        </div>
+    </section>
+    <!-- part3 dreamlight family -->
+
+    <section id="dreamlightfamily" class="test" data-scroll-reveal="wait 2.5s and then ease-in-out 100px" style="position:relative;margin-top:150px;">
+        <h2 style="margin:3% auto;text-align: center;">Dreamlight Family</h2>
+
+        <div class="filter" style="margin:2% auto;">
+            <a href="javascript:void(0)" class="button js-filter-all active" onclick="onFeatureSlected(this)">Dreamlight Pro</a>
+            <a href="javascript:void(0)" class="button js-filter-one" onclick="onFeatureSlected(this)">Dreamlight Heat</a>
+            <a href="javascript:void(0)" class="button js-filter-two" onclick="onFeatureSlected(this)">Dreamlight Ease</a>
+        </div>
+        <div style="float:left; width:45%;height:78%;">
+            <img style="width:100%;height:100%;" src="#">
+        </div>
+        <div class="familiesDetail" style="float:right;width:45%;height:78%;">
+
+            
+
+            <div class="textDetail" style="height:50%;border:1px solid red;">
+
+                <div id="dreamlight_pro_feature" style="display:block;">
+                    <!-- <div style="float: left;">
+                        <img width="50%" height="50%" src="img/freeze/face1.png">
+                    </div>                    -->
+                    <div style="overflow-y:auto;overflow-x:hidden;">
+                        <!-- <div> -->
+                            <p>Vocal hypnosis/light/audio sleeping-aid therapy
+                            </p>
+                        <!-- </div> -->
+                        <!-- <div> -->
+                            <p>Mindfulness meditation assist
+                            </p>
+                        <!-- </div> -->
+                        <!-- <div> -->
+                            <p>100% light blocking with much less pressure
+                            </p>
+                        <!-- </div> -->
+                        <!-- <div> -->
+                            <p>Perfect fit for any face with super comfortable material
+                            </p>
+                        <!-- </div> -->
+                        <!-- <div> -->
+                            <p>Sleep and heart rate monitoring，genetic insight
+                            </p>
+                        <!-- </div> -->
+                        <!-- <div> -->
+                            <p>Beauty facial and jet lag remedy</p>
+                        <!-- </div> -->
+                    </div>
+
+                </div>
+                <div id="dreamlight_heart_feature" style="display:none;">
+
+
+
+                    <div style="width: 512px;height: 150px;overflow-y:auto;overflow-x:hidden;">
+                        <div>
+                            <p>100% light blocking with much less pressure
+                                <p>
+                        </div>
+                        <div>
+                            <p>With infrared heating system, you can warm your eye and face as an eye mask, or warm your neck
+                                as scarf
+                                <p>
+                        </div>
+                        <div>
+                            <p>Perfect fit for any face with super comfortable material
+                                <p>
+                        </div>
+                        <div>
+                            <p>Cordless design, you can heat the mask with a light and small lithium battery, we design a magnetic
+                                type port, so there is no cord
+                                <p>
+                        </div>
+                        <div>
+                            <p>Easy to carry, you can scroll it and put in carrying bag, very light and soft, no burden at all
+                                <p>
+                        </div>
+                    </div>
+
+                </div>
+                <div id="dreamlight_ease_feature" style="display:none;">
+
+
+                    <div style="width: 512px;height: 150px;overflow-y:auto;overflow-x:hidden;">
+                        <div>
+                            <p>100% light blocking with much less pressure
+                                <p>
+                        </div>
+                        <div>
+                            <p>Perfect fit for any face with super comfortable material
+                                <p>
+                        </div>
+                        <div>
+                            <p>Use Dreamlight Ease to take a nap, you can get more relax, It also can be your good companion
+                                for sleep during flight
+                                <p>
+                        </div>
+                        <div>
+                            <p>Easy to carry, you can scroll it and put in carrying bag, very light and soft, no burden at all
+                                <p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="videoLayout" style="height:50%;position:relative;border:1px solid green;">
+                    <!-- <img id="showImg" onclick="onplayhind()" src="#" width="100%" height="50%" style=""> -->
+                    <!-- <div style="position: absolute;bottom: 0px"> -->
+                    <h3 style="text-align: center;">Watch the video</h3>
+    
+                    <div style="width:100%;height:73%;">
+                        <img onclick="onPlayFun()" src="img/freeze/play.png" style="width: 100%;height:100%;">
+                    </div>
+                    <!-- <video id="showProVideo" style="display:none;width: 70%;height: auto;background-color: #000000;margin-top: 100px;" src="http://www.dreamlight.tech/static/images/movie.mp4"
+                    controls="controls">
+                    您的浏览器不支持 video 标签。
+                </video> -->
+                    <!-- </div> -->
+    
+                </div>
+
+        </div>
+        </div>
+    </section>
+
+
+    <!-- part4   mindfulness breathing therapy-->
+    <section class="test"  style="background:red;">
+        <h2 style="text-align: center;">Mindfulness Breathing Therapy</h2>
+    </section>
+    <!-- part5 slider2 reviews -->
+    <section class="test" style="background:green;">
+        <h2>Review</h2>
+        <div>slider2</div>
+    </section>
+    <!-- part6 get dreamlight app -->
+    <section class="test" style="background:yellow;position: relative;">
+        <h2>Get Dreamlight App</h2>
+        <div style="position: absolute;width:50%;height:88%;z-index: 2;left:0;">
+            <img src="" alt="pic4" style="position:absolute;width:100%;height:100%;border-right:1px solid red;">
+        </div>
+        <div style="position: absolute;width:50%;height:88%;z-index: 2;right:0;">
+            <img src="" alt="pic5" style="position:absolute;width:100%;height:100%;">
+        </div>
+        <div class="platforms" style="position: absolute;width:100%;top:50%;transform:translateY(-50%);text-align:center;z-index: 3;">
+            <a href="" class="androidDown">androidDown</a>
+            <a href="" class="iosDown">iosDown</a>
+        </div>
+    </section>
+    <!-- part7 footer -->
+    <section id="footer" class="test" style="display:flex;justify-content: space-evenly;">
+        <div>
+            <h3>About</h3>
+            <p>
+                <a href="">Company</a>
+            </p>
+            <p>
+                <a href="">Reports in Media</a>
+            </p>
+            <p>
+                <a href="">Privacy Policy</a>
+            </p>
+            <p>
+                <a href="">Privacy Policy</a>
+            </p>
+            <p>
+                <a href="">Terms of Use</a>
+            </p>
+            <p>
+                <a href="">Business Cooperation</a>
+            </p>
+            <p>
+                <a href="">Accolades</a>
+            </p>
+        </div>
+        <div>
+            <h3>Contact</h3>
+            <p>
+                <a href="">Dreamlight USA</a>
+            </p>
+            <p>
+                <a href="">Address:America America Ameri</a>
+            </p>
+            <p>
+                <a href="">Dreamlight China </a>
+            </p>
+            <p>
+                <a href="">Address:中国</a>
+            </p>
+        </div>
+        <div class="company">
+            <h3>Follow Us</h3>
+            <div>
+                <a href="#">
+                    <img width="30px" height="30px" src="img/freeze/Google+.png">
+                </a>
+                <a href="https://www.facebook.com/dreamlighthq/" target="_blank">
+                    <img style="margin-left: 5px;" width="30px" height="30px" src="img/freeze/facebook.png">
+                </a>
+                <a href="https://twitter.com/DreamlightHQ" target="_blank">
+                    <img style="margin-left: 5px;" width="30px" height="30px" src="img/freeze/twitter.png">
+                </a>
+                <a href="https://www.instagram.com/dreamlighthq/" target="_blank">
+                    <img style="margin-left: 5px;" width="30px" height="30px" src="img/freeze/Instagram.png">
+                </a>
+                <a href="#">
+                    <img style="margin-left: 5px;" width="30px" height="30px" src="img/freeze/Pinterest.png">
+                </a>
+                <a href="https://www.youtube.com/channel/UCO-vJasArZ2V38UnGemJZtA?view_as=subscriber" target="_blank">
+                    <img style="margin-left: 5px;" width="30px" height="30px" src="img/freeze/Youtube.png">
+                </a>
+            </div>
+            <br>
+            <div>Mail</div>
+            <div>wwwwwww@qqqqqq.com</div>
+        </div>
+    </section>
+
+
+    <script src="js/scrollreveal.js"></script>
+
+     <script>
+        var config = {
+            reset: true,   // 滚动鼠标时，动画开关(默认是false没有打开鼠标滚动的动画开关)
+            origin: 'right', // 动画开始的方向
+            duration: 500,   // 动画持续时间
+            delay: 0, // 延迟
+            rotate: { x: 0, y: 0, z: 0 },  // 过度到0的初始角度
+            opacity: 0.2, // 初始透明度  (0.2到1的效果)
+            scale: 2,       //缩放
+            easing: 'ease-in-out', //动画效果// 缓动'ease', 'ease-in-out'，'linear'...
+            // 回调函数
+            //当动画开始之前会被触发
+            beforeReveal: function (domEl) {
+                console.log('动画执行了');
+            },
+            //鼠标滚轮滚动之前会被触发
+            beforeReset: function (domEl) {
+                console.log('滚轮开始---');
+            },
+            //动画开始之后会被触发
+            afterReveal: function (domEl) {
+                console.log('动画结束了');
+            },
+            //滚轮滚动之后会被触发
+            afterReset: function (domEl) {
+                console.log('滚轮结束了');
+            }
+        };
+
+        //1.创建一个scrollReveal对象
+        window.sr = ScrollReveal();
+        //2.调用scrollReveal里的reveal方法将scrollReveal内部的动画和css中的标签关联起来
+        sr.reveal('.test', config);
+//参数一：跟html标签关联的类名
+//参数二：动画配置
+
+    </script> 
+
+</body>
+
+</html>
