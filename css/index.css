@@ -34,6 +34,10 @@
             margin: 0;
             padding: 0;
         }
+        .navbar-inverse.backgroundState{
+            background-color: rgba(255,255,255,0.9);
+            border-color: #FF6E25;
+        }
         /* 层级导航 */
         .dropdown-submenu {
             position: relative;
@@ -256,6 +260,9 @@
             color:#FF6E25;
             font-size: 34px;
             text-shadow: none;
+        }
+        .modal-header .close:focus{
+            outline: none;
         }
         
         /* footer */

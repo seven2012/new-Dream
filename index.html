@@ -24,9 +24,10 @@
         wow.init();
 
     </script>
+
 </head>
 
-<body data-spy="scroll" data-target=".navbar-inverse">
+<body data-spy="scroll" data-target="#navBar">
     <!-- navbar -->
     <section class="navbar navbar-fixed-top navbar-inverse" style="width:100vw;padding:0 5vw;">
         <!-- <div class="container"> -->
@@ -704,6 +705,22 @@
     <script src="js/bootstrap.min.js"></script>
 
     <script src="js/scrollreveal.js"></script>
+
+    <script>       
+
+        $(window).scroll(function () {
+            var menu_top = $('.navbar-inverse').height();
+            console.log(menu_top)
+            console.log($(window).scrollTop())
+            if ($(window).scrollTop() >= menu_top) {
+                $('.navbar-inverse').addClass('backgroundState')
+            }
+            else {
+                $('.navbar-inverse').removeClass('backgroundState')
+            }
+        });  
+
+    </script>
 
     <script>
         var config = {
