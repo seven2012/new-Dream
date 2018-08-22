@@ -10,7 +10,7 @@
 
         .test {
             /* height: 70vh; */
-            width: 100vw;
+            /* max-width: 1140px;; */
             /* margin-bottom: 10vw; */
             /* margin: 6vh 10vw; */
             /* border: 1px solid blue; */
@@ -381,8 +381,8 @@
 
         /* section 2 */
         #introDreamlight{
-            padding:7.5% 5%;
-            color:#666;
+            padding:7.5% 12%;
+            color:#666666;
             background-color: #fff;
         }
         .test > h2{
@@ -440,16 +440,16 @@
         /* family */
         section#dreamlightfamily{
             position: relative;
-            width:100%;
-            padding-left:5%;
-            padding-right:5%;
+            /* max-width:1650px; */
+            padding-left:12%;
+            padding-right:12%;
             padding-top:8%;
             padding-bottom:8%;
             margin:auto;
         }
         section#dreamlightfamily .filter{
             margin:5% auto;
-            max-width: 1140px;
+            max-width: 1250px;
         }
         section#dreamlightfamily .filter a {
             padding: 7px 7px;
@@ -471,8 +471,8 @@
             border-color: #FF6E25;
         }
         section#dreamlightfamily .wrapper{
-            max-height:448px;
-            max-width: 1140px;
+            /* max-height:448px; */
+            max-width: 1250px;
             display:flex;
             flex-wrap: wrap;
             justify-content: space-between;
@@ -520,9 +520,9 @@
         }
         /* mindfulness */
         #mindfulness{
-            width:90%;
-            margin-left:5%;
-            margin-right:5%;
+            width:76%;
+            margin-left:12%;
+            margin-right:12%;
         }
         #mindfulness h2{
             margin-top:90px;
@@ -544,7 +544,9 @@
         section#partMedia{
             /* border:1px solid red; */
             background-color: #faf8f2;
-            height:550px;
+            /* height:550px; */
+            padding:6% 10%;
+
         }
         #myCarousel2 {
             /* height:66%; */
@@ -656,7 +658,7 @@
 
         @media (min-width:768px){
             section#partMedia{
-                padding-top:10vh;
+                /* padding-top:10vh; */
                 height:60vh;
                 margin-bottom:10vh;
             }
