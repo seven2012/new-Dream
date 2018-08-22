@@ -10,8 +10,20 @@
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/index.css">
-    <style>
-    </style>
+    <script src="js/wow.js"></script>
+    <script>
+        wow = new WOW(
+            {
+                boxClass: 'wow',      // default
+                animateClass: 'animated', // default
+                offset: 0,          // default
+                mobile: true,       // default
+                live: true        // default
+            }
+        )
+        wow.init();
+
+    </script>
 </head>
 
 <body data-spy="scroll" data-target=".navbar-inverse">
@@ -220,7 +232,7 @@
     </section>
 
     <!-- part1 slider1-->
-    <section class="test" style="height:90vh;">
+    <section class="test" style="height:100vh; background: #faf8f2;">
         <div id="myCarousel" class="carousel slide" style="">
             <!-- carousel-indicators样式 = 圆点导航 -->
             <ol class="carousel-indicators">
@@ -252,16 +264,16 @@
 
                 <!--picture2-->
                 <div class="item pic2" style="">
-                    <img class="animated slideInLeft img-responsive" src="./images/tp-hand-slider2.png" alt="Second slide" style="height:100%;width:60%;">
-                    <div class="animated slideInDown" style="position:absolute;width:50%;top:27%;right:0;font-size: 64px;font-weight: 400;">
+                    <img class="animated slideInLeft img-responsive" src="./images/tp-hand-slider2.png" alt="Second slide" style="height:80%;width:42%;">
+                    <div class="animated slideInDown" style="position:absolute;width:50%;top:32%;right:0;font-size: 64px;font-weight: 400;">
                         Dreamlight
                         <span style="font-weight: 300">&nbsp;App</span>
                     </div>
-                    <div class="animated slideInRight" style="position:absolute;width:50%;top:39%;right:0;font-size: 64px;font-weight: 300;">
+                    <div class="animated slideInRight" style="position:absolute;width:50%;top:42%;right:0;font-size: 64px;font-weight: 300;">
                         Download
                     </div>
 
-                    <div class="animated slideInUp" style="position:absolute;width:50%;right:0;top:53%;display:flex;">
+                    <div class="animated slideInUp" style="position:absolute;width:50%;right:0;top:56%;display:flex;">
                         <div class="aBefore" style="position:relative;">
                             <a href="#about" style="">LEARN MORE</a>
                         </div>
@@ -299,13 +311,12 @@
         </div>
     </section>
     <!-- part2 what's dreamlight-->
-    <section class="test" id="introDreamlight" style="">
-        <h2>What's dreamlight</h2>
-        <p>Dreamlight is a creative smart system to help you get faster enhanced sleep and it can create an ideal atmosphere
-            to help you meditate.</p>
+    <section id="introDreamlight" style="">
+        <h2 class="wow slideInLeft" style="text-align: center;">What's dreamlight</h2>
+        <p clsss="animated slideInLeft">Dreamlight is a creative smart system to help you get faster enhanced sleep and it can create an ideal atmosphere to help you meditate</p>
         <div id="families">
 
-            <div class="left">
+            <div class="wow slideInLeft left">
                 <img src="./images/sleep.png" alt="pic1">
                 <p>We use three proven effective ways to make users fall asleep faster.</p>
                 <ul>
@@ -318,7 +329,7 @@
                     way
                 </p>
             </div>
-            <div class="right">
+            <div class="wow slideInRight right">
                 <img src="./images/meditation.png" alt="pic2">
                 <p>Dreamlight Pro is a helpful device to assist your meditation. It’s a perfect fit for your face, keep your
                     eyes open and you will feel that you are in an isolated place. Mindfulness breathing lights lead you
@@ -335,18 +346,18 @@
 
     <section id="dreamlightfamily" class="test" data-scroll-reveal="wait 2.5s and then ease-in-out 100px" style="background-color:#faf8f2">
 
-        <h2 style="">Dreamlight Family</h2>
+        <h2 class="animated slideInDown" style="font-weight: 300;">Dreamlight Family</h2>
 
-        <div class="filter" style="">
+        <div class="wow slideInLeft filter" style="">
             <a href="javascript:void(0)" class="button js-filter-all active" onclick="onFeatureSlected(this)">Dreamlight Pro</a>
             <a href="javascript:void(0)" class="button js-filter-one" onclick="onFeatureSlected(this)">Dreamlight Heat</a>
             <a href="javascript:void(0)" class="button js-filter-two" onclick="onFeatureSlected(this)">Dreamlight Ease</a>
         </div>
         <div class="wrapper" style="">
-            <div class="partLeft" style="">
+            <div class="wow slideInLeft partLeft" style="">
                 <img style="width:100%;height:100%;" src="./images/face1.png">
             </div>
-            <div class="partRight">
+            <div class="wow slideInRight partRight">
                 <div class="familiesDetail" style="">
 
                     <div class="textDetail" style="height:50%;">
@@ -448,64 +459,64 @@
                         <img style="" src="./images/play.png" data-toggle="modal" data-target="#myModal">
 
                         <!-- 模态框（Modal） -->
-                        
+
                     </div>
                 </div>
             </div>
         </div>
     </section>
     <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-            <div class="modal-dialog" style="width:100%;height:100%;" role="document">
-                <div class="modal-content" style="background:rgba(0,0,0,0.5);">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <!-- <h4 class="modal-title" id="myModalLabel">模态框（Modal）标题</h4> -->
-                    </div>
-                    <div class="modal-body">
-                            <video style="width:100%;height:100%;" src="http://www.dreamlight.tech/static/images/movie.mp4" controls="controls" preload="metadata">ddd</video>
-                    </div>
-                    <!-- <div class="modal-footer">
+        <div class="modal-dialog" style="width:100%;height:100%;" role="document">
+            <div class="modal-content" style="background:rgba(0,0,0,0.5);">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <!-- <h4 class="modal-title" id="myModalLabel">模态框（Modal）标题</h4> -->
+                </div>
+                <div class="modal-body">
+                    <video style="width:100%;height:100%;" src="http://www.dreamlight.tech/static/images/movie.mp4" controls="controls" preload="metadata">ddd</video>
+                </div>
+                <!-- <div class="modal-footer">
                         <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
                         <button type="button" class="btn btn-primary">提交更改</button>
                     </div> -->
-                </div>
-                <!-- /.modal-content -->
             </div>
-            <!-- /.modal -->
+            <!-- /.modal-content -->
         </div>
+        <!-- /.modal -->
+    </div>
 
 
     <!-- part4   mindfulness breathing therapy-->
     <section class="test" id="mindfulness" style="">
-        <h2 style="">Mindfulness Breathing Therapy</h2>
-        <h3>What is mindfulness?</h3>
-        <p>Mindfulness is the basic human ability to be fully present, aware of where we are and what we’re doing, and not overly
+        <h2 class="wow slideInDown" style="">Mindfulness Breathing Therapy</h2>
+        <h3 class="wow slideInLeft">What is mindfulness?</h3>
+        <p class="wow slideInLeft">Mindfulness is the basic human ability to be fully present, aware of where we are and what we’re doing, and not overly
             reactive or overwhelmed by what’s going on around us.</p>
-        <h3>What are the benefits of mindfulness?
+        <h3 class="wow slideInLeft">What are the benefits of mindfulness?
         </h3>
-        <p>Researchers theorize that mindfulness meditation promotes metacognitive awareness, decreases anxiety via disengagement
+        <p class="wow slideInLeft">Researchers theorize that mindfulness meditation promotes metacognitive awareness, decreases anxiety via disengagement
             from perseverative cognitive activities and enhances attentional capacities through gains in working memory.
             These cognitive gains, in turn, contribute to effective emotion-regulation strategies.
         </p>
         <div class="emotion">
-            <img src="./images/mindfulness1.png" alt="">
-            <img src="./images/mindfulness2.png" alt="">
+            <img class="wow slideInLeft" src="./images/mindfulness1.png" alt="">
+            <img class="wow slideInRight" src="./images/mindfulness2.png" alt="">
         </div>
     </section>
 
-    <section class="test" style="width: 90%;margin-left: 5%;margin-right: 5%;padding-bottom:10vh;">
-        <h3>How do I practice Mindfulness with Dreamlight?</h3>
-        <ol>
+    <section class="test" style="width: 90%;margin-left: 5%;margin-right: 5%;padding-top:10vh;padding-bottom:10vh;">
+        <h3 class="wow slideInLeft">How do I practice Mindfulness with Dreamlight?</h3>
+        <ol class="wow slideInLeft">
             <li>Take a moment to sit in a comfortable position or lie down. </li>
             <li>Take a few deep breaths to relax your body and your mind. Slowly adjust your breaths in accordance with Dreamlight
                 pre-programmed inner pulsing lights. </li>
             <li>When light increases, slowly inhale; when light decreases, slowly exhale. Do it repeatedly for at least 5 minutes.
             </li>
         </ol>
-        <div>
+        <div class="wow slideInRight">
             <img src="./images/mindfulness3.png" alt="" style="width:100%;height:100%;">
         </div>
-        <ul>
+        <ul class="wow slideInLeft">
             <li>*Mindfulness is recommended by the National Institute for Health and Care Excellence (NICE) for many conditions
                 including various mental illnesses, chronic pain, insomnia and stress.</li>
             <li>*Mindfulness-Based Stress Reduction is used for Primary Chronic Insomnia, according to a NCBI study( US National
@@ -517,10 +528,10 @@
     <!-- part5 slider2 reviews -->
     <section class="test" id="partMedia" style="">
 
-        <h2 class="animated slideInDown">Review</h2>
+        <h2 class="wow slideInDown">Review</h2>
 
 
-        <div id="myCarousel2" class="carousel slide" style="">
+        <div id="myCarousel2" class="wow slideInLeft carousel slide" style="">
             <!-- 轮播（Carousel）指标 -->
             <ol class="carousel-indicators">
                 <li data-target="#myCarousel2" data-slide-to="0" class="active"></li>
@@ -582,16 +593,16 @@
 
     </section>
     <!-- part6 get dreamlight app -->
-    <section class="test" id="getApp" style="position: relative;height:60vh;">
+    <section  class="test" id="getApp" style="position: relative;height:60vh;">
         <h2>Get Dreamlight App</h2>
-        <div style="position: absolute;width:50%;height:88%;z-index: 2;left:54px;bottom:60px;">
+        <div class="wow slideInLeft" style="position: absolute;width:50%;height:88%;z-index: 2;left:54px;bottom:60px;">
             <img src="./images/freeze-angled3.png" alt="pic4" style="position:absolute;width:100%;height:100%;">
         </div>
-        <div style="position: absolute;width:50%;height:88%;z-index: 2;right:74px;bottom:0;">
+        <div  class="wow slideInRight" style="position: absolute;width:50%;height:88%;z-index: 2;right:74px;bottom:0;">
             <img src="./images/freeze-angled2.png" alt="pic5" style="position:absolute;width:100%;height:100%;">
         </div>
-        <div class="platforms" style="position: absolute;width:100%;top:50%;transform:translateY(-50%);text-align:center;z-index: 3;">
-            <a id="androidDown" href="https://play.google.com/store/apps/details?id=com.aisleep.dreamlight" target="_blank" class="btn btn-primary scrollpoint sp-effect1 active animated fadeInLeft">
+        <div  class="platforms" style="position: absolute;width:100%;top:50%;transform:translateY(-50%);text-align:center;z-index: 3;">
+            <a  id="androidDown" href="https://play.google.com/store/apps/details?id=com.aisleep.dreamlight" target="_blank" class="btn btn-primary scrollpoint sp-effect1 active wow bounceInLeft">
                 <i class="fa fa-android fa-3x pull-left" style="width:33px;height:42px;"></i>
                 <span>Download for</span>
                 <br>
@@ -601,7 +612,7 @@
                     <img style="width: 100%;height: 100%" src="./images/androidcode.png">
                 </div>
             </a>
-            <a id="iosDown" href="https://itunes.apple.com/cn/app/dreamlight-sleepmask/id1361524742?mt=8" target="_blank" class="btn btn-primary scrollpoint sp-effect2 active animated fadeInRight">
+            <a id="iosDown" href="https://itunes.apple.com/cn/app/dreamlight-sleepmask/id1361524742?mt=8" target="_blank" class="btn btn-primary scrollpoint sp-effect2 active wow bounceInRight">
 
                 <i class="fa fa-apple fa-3x pull-left" style="width:33px;height:42px;"></i>
                 <span>Download for</span>
@@ -615,7 +626,7 @@
     </section>
     <!-- part7 footer-->
     <section id="footer" class="test" style="display:flex;justify-content: space-evenly;">
-        <div>
+        <div class="">
             <h3>About</h3>
             <p>
                 <a href="">Company</a>
