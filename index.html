@@ -716,25 +716,6 @@
         <p>Copyright © 2018 Dreamlight Inc.</p>
     </div>
 
-    <script>
-            var scale = 1 / window.devicePixelRatio
-            console.log('scale '+scale)
-            document.write(`<meta name="viewport" content="initial-scale=${scale}, user-scalable=no, maximum-scale=${scale}, minimum-scale=${scale}">`)
-        </script>
-          
-        <script>
-            var width = document.documentElement.clientWidth / window.devicePixelRatio
-            console.log('document.documentElement.clientWidth '+document.documentElement.clientWidth)
-            console.log('window.devicePixelRatio '+window.devicePixelRatio)
-            console.log('width '+width)
-            var css = `
-            html{
-            font-size: ${width / 10 * window.devicePixelRatio}px;
-            }    
-            `
-            document.write(`<style>${css}</style>`)
-    </script>
-
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/scrollreveal.js"></script>
