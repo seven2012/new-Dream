@@ -6,27 +6,22 @@
             padding: 0;
             overflow-x: hidden;
             color:#666666;
+            font-size: 62.5%;
         }
 
-        .test {
-            /* height: 70vh; */
-            /* max-width: 1140px;; */
-            /* margin-bottom: 10vw; */
-            /* margin: 6vh 10vw; */
-            /* border: 1px solid blue; */
+         h2{
+            margin:0;
+            text-align: center;
+            font-size: 35px;
+            font-weight:300;           
         }
-        h2 {
-            font-weight: 300;
-        }
-
-        /* 正式样式 */
-
-        /* navbar */
 
         .nav-logo {
             float: left;
-            height: 40px;
-            margin-top: 5px;
+            height: 2.857rem;
+            /* 40px; */
+            margin-top: 0.357rem;
+            /* 5px; */
             overflow: hidden;
         }
 
@@ -67,7 +62,8 @@
 
         .dropdown-submenu.pull-left>.dropdown-menu {
             left: -100%;
-            margin-left: 10px;
+            margin-left: 0.714rem;
+            /* 10px; */
             -webkit-border-radius: 6px 0 6px 6px;
             -moz-border-radius: 6px 0 6px 6px;
             border-radius: 6px 0 6px 6px;
@@ -146,12 +142,15 @@
         }
         .dropdown-menu>li>.model{
             display:none;
-            width:200px;
-            height:200px;
+            width:14.286rem;
+            /* 200px; */
+            height:14.286rem;
+            /* 200px; */
             background-color:#ccc;
             position: absolute;
             top:0;
-            right:-200px;           
+            right:-14.286rem;
+            /* -200px;            */
             
         }
         /* .dropdown-menu>li>.model.model1{
@@ -235,7 +234,7 @@
         }
 
         #families div {
-            width: 45%;
+            /* width: 45%; */
         }
 
         #families img {
@@ -388,68 +387,56 @@
 
         /* section 2 */
         #introDreamlight{
-            padding:7.5% 12%;
+            padding-top:7.5%;
+            padding-bottom:7.5%;
             color:#666666;
             background-color: #fff;
         }
-        .test > h2{
-            margin:0;
-            text-align: center;
-            font-size: 35px;
-            font-weight:300;
-            
-        }
-        #introDreamlight > p{
+        
+        #introDreamlight  p{
             margin:5% auto;
             text-align: center;
             font-size: 18px;
             font-weight: 400;
         }
-        #introDreamlight > #families{
+        #introDreamlight  #families{
             display:flex;
             flex-wrap: wrap;
             justify-content: space-around;
         }
-        #introDreamlight > #families p{
-            font-size: 14px;
+        #introDreamlight  #families p{
+            font-size: 18px;
         }
         @media (min-width: 768px){
-            #introDreamlight > #families > .left,
-            #introDreamlight > #families > .right
+            #introDreamlight  #families > .left,
+            #introDreamlight  #families > .right
             {
                 width:45%;               
                 box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.3);               
             }
         }
         @media (max-width: 767px){
-            #introDreamlight > #families > .left,
-            #introDreamlight > #families > .right
+            #introDreamlight  #families > .left,
+            #introDreamlight  #families > .right
             {
                 width:90%;
                 /* border:1px solid #ccc; */
                 box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.3);                
             }
-            #introDreamlight > #families > .right{
+            #introDreamlight  #families > .right{
                 margin-top:15px;
             }
         }
-        #introDreamlight > #families > .left img,
-        #introDreamlight > #families > .right img {
+        #introDreamlight  #families > .left img,
+        #introDreamlight  #families > .right img {
             width:100%;
             height:auto;
             background-color: #ccc;
         }
         
-        #introDreamlight > #families > .left ul{}
-
-        #introDreamlight > #families > .right p{}
-
         /* family */
         section#dreamlightfamily{
             position: relative;
-            /* max-width:1650px; */
-            padding-left:12%;
-            padding-right:12%;
             padding-top:8%;
             padding-bottom:8%;
             margin:auto;
@@ -493,6 +480,7 @@
             width:45%;
             display: flex;
             flex-direction: column;
+            justify-content: space-between;
         }
         section#dreamlightfamily .wrapper .partRight .familiesDetail{
             width:100%;
@@ -526,11 +514,6 @@
             margin:90px;
         }
         /* mindfulness */
-        #mindfulness{
-            width:76%;
-            margin-left:12%;
-            margin-right:12%;
-        }
         #mindfulness h2{
             margin-top:90px;
             margin-bottom:60px;
@@ -545,6 +528,9 @@
             font-weight: 300;
             line-height: 1.3;
         }
+        #mindfulness .emotion img:nth-child(2){
+          margin-left:10%;
+        }
 
 
         /* slider2 */
@@ -552,8 +538,11 @@
             /* border:1px solid red; */
             background-color: #faf8f2;
             /* height:550px; */
-            padding:6% 10%;
+            padding:6% 0;
 
+        }
+        section#partMedia .container{
+            height:100%;
         }
         #myCarousel2 {
             /* height:66%; */
@@ -602,14 +591,14 @@
         @media (max-width:767px){
             section#partMedia{
                 height:70vh;
-                padding-top:7vh;
+                padding:10% 0;
                 margin-bottom:7vh;               
             }
             section#partMedia h2{
                 margin-bottom:2vh;
             }
             #myCarousel2 {
-                height:66%;
+                height:70%;
             }
             #myCarousel2 .carousel-indicators {
                 bottom: 0;
@@ -662,7 +651,11 @@
                 font-weight: 200;
             }
         }
-
+        @media (max-width: 997px){
+            section#partMedia .container {
+                    width: 100%;
+            }
+        }
         @media (min-width:768px){
             section#partMedia{
                 /* padding-top:10vh; */
@@ -683,12 +676,32 @@
             }
         }
         /* part6 getapp */
-        #getApp > h2{
+        #getApp  h2{
             position: absolute;
             top: 30%;
             left: 50%;
             transform: translateX(-50%);
             color: #666666;
+        }
+         #getApp .picphone img{
+            position: absolute;
+            /* width:65%; */
+        }
+        #getApp .picphone img:first-child{
+            left:0;
+        }
+        #getApp .picphone img:last-child{
+            right:0;
+            bottom:0;
+        }
+        
+        section#getApp .platforms{
+            position: absolute;
+            width:100%;
+            top:50%;
+            transform:translateY(-50%);
+            text-align:center;
+            z-index: 3;
         }
         section#getApp .platforms .btn{
             /* width: 96%; */
@@ -699,6 +712,11 @@
             background-color: transparent;
             border-radius: 3em;
             padding:5px 25px;
+        }
+        section#getApp .platforms .btn.btn-primary.active2{
+            color:white;
+            background:#FF6E25;
+            border-color:#FF6E25;
         }
         section#getApp .platforms .btn.btn-primary:hover{
             color:white;
@@ -739,4 +757,3 @@
         
         
         
-     
