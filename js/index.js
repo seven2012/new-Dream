@@ -28,7 +28,7 @@ function onFeatureSlected(e){
 }
 
 $(function(){
-    $('#dreamlightfamily>.filter>a').click(function(){
+    $('#dreamlightfamily>.container>.filter>a').click(function(){
       $(this).addClass('active');
       $(this).siblings().removeClass('active');
     });
