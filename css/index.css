@@ -1,12 +1,12 @@
         /* 测试样式 */
 
-        html,
+        
         body {
             margin: 0;
             padding: 0;
             overflow-x: hidden;
-            color:#666666;
-            font-size: 62.5%;
+            /* color:#666666; */
+            /* font-size: 62.5%; */
         }
 
          h2{
@@ -18,11 +18,28 @@
 
         .nav-logo {
             float: left;
-            height: 2.857rem;
+            height: 0.6rem;
+            /* /1.3rem/ */
             /* 40px; */
-            margin-top: 0.357rem;
+            /* margin-top: 0.357rem; */
+            width:3rem;
             /* 5px; */
             overflow: hidden;
+        }
+        @media(max-width:767px){
+            .nav-logo {
+                float: left;
+                height: 1.3rem;
+                /* /1.3rem/ */
+                /* 40px; */
+                /* margin-top: 0.357rem; */
+                width:7rem;
+                /* 5px; */
+                overflow: hidden;
+            }
+        }
+        .navbar-right{
+            margin-top:0.1rem;
         }
 
         .nav-logo a {
@@ -142,15 +159,12 @@
         }
         .dropdown-menu>li>.model{
             display:none;
-            width:14.286rem;
-            /* 200px; */
-            height:14.286rem;
-            /* 200px; */
+            width:200px;
+            height:200px;
             background-color:#ccc;
             position: absolute;
             top:0;
-            right:-14.286rem;
-            /* -200px;            */
+            right:-200px;           
             
         }
         /* .dropdown-menu>li>.model.model1{
@@ -344,9 +358,7 @@
             position: absolute;
             font-size: 18px;
             font-weight: 200;
-
             line-height: 1.33;
-            /* padding: 10px 25px; */
         }
 
         .aBefore a {
@@ -755,5 +767,217 @@
             font-size: 14px;
         }
         
+    /* slider1 */
+    /* pic1 */
+    .carousel-inner .pic1 {
+        position: relative;
+    }
+    .carousel-inner .pic1  >div:nth-child(2){
+        position:absolute;left:10%;top:26%;font-size: 30px;font-weight: 200;
+    }
+    .carousel-inner .pic1 > div:nth-child(3){
+        font-size: 64px;top: 31%;position: absolute;left: 10%;font-weight: 300;
+    }
+    .carousel-inner .pic1 > div:nth-child(4){
+        position:absolute;left:10%;top:41%;font-size: 64px;font-weight: 400;
+    }
+    .carousel-inner .pic1 > div:nth-child(5){
+        position:absolute;left:10%;top:52%;font-size: 25px;font-weight: 200;
+    }
+    .carousel-inner .pic1 > div:nth-child(6){
+        top:59%;left:10%;
+    }
+    /* pic2 */
+    .carousel-inner .pic2{
+        position: relative;
+    }
+    .carousel-inner .pic2 img{
+        bottom:0;;width:67%;max-width: 700px;right:53%;
+    }
+    .carousel-inner .pic2  >div:nth-child(2){
+        position:absolute;top:32%;left:52%;font-size: 64px;font-weight: 400;
+    }
+    .carousel-inner .pic2 > div:nth-child(3){
+        position:absolute;top:42%;left:52%;font-size: 64px;font-weight: 300;
+    }
+    .carousel-inner .pic2 > div:nth-child(4){
+        position:absolute;width:50%;left:52%;top:56%;display:flex;
+    }
+    .carousel-inner .pic2 > div:nth-child(4)>.aBefore{
+        position:relative;
+    }
+    .carousel-inner .pic2 > div:nth-child(4)>.aBefore a{
+
+    }
+    .carousel-inner .pic2 > div:nth-child(4)>.aBefore:last-child{
+        margin-left:1%;
+    }
+    /* pic3 */
+    .carousel-inner .pic3 img{min-width:370px;}
+    .carousel-inner .pic3 div:nth-child(2){
+        top:36%;font-size: 64px;font-weight: 400;
+    }
+    .carousel-inner .pic3 div:nth-child(3){
+        top:50%;font-size: 24px;font-weight: 400;
+    }
+    .carousel-inner .pic3 div:nth-child(4){
+        top:54%;font-size: 24px;font-weight: 400;
+    }
+    .carousel-inner .pic3 div:nth-child(5){
+        position: absolute;bottom:30%;right:0;width:90%;text-align: start;
+    }
+
+    /* getApp */
+    #getApp{
+        position: relative;height:60vh; max-width: 1214px;margin-left:auto;margin-right:auto;
+    }
+    #getApp h2{
+        top:0;
+        font-size: 21px;
+    }
+    /* #getApp .platforms a:hover > .code{
         
+        display:none;
+    } */
+
+    @media(max-width:768px){
+        /* pic1 */
+        .carousel-inner .pic1 div:nth-child(2){
+            position:absolute;left:10%;top:32%;font-size: 0.586rem;font-weight: 200;
+        }
+        .carousel-inner .pic1 div:nth-child(3){
+            font-size: 1.253rem;top: 42%;position: absolute;left: 10%;font-weight: 300;
+        }
+        .carousel-inner .pic1 div:nth-child(4){
+            position:absolute;left:10%;top:50%;font-size: 1.253rem;font-weight: 400;
+        }
+        .carousel-inner .pic1 div:nth-child(5){
+            position:absolute;left:10%;top:59%;font-size: 0.48rem;font-weight: 200;
+        }
+        .carousel-inner .pic1 div:nth-child(6){
+            top:71%;left:10%;
+        }
+        .aBefore{
+            /* font-size: 0.48rem */
+        }
+        .aBefore a {
+            padding: 0.213rem 0.4rem;
+            border-radius: 0.64rem;
+            font-size: 0.48rem
+        }
+        /* pic2 */
+        .carousel-inner .pic2{
+            text-align: center;
+        }
+        .carousel-inner .pic2 img{
+            position: absolute;
+            width:78%;
+            /* left:-36%; */
+            height: 60%;
+            /* top: 40%; */
+            right:46%;
+            bottom:0;
+        }
+        .carousel-inner .pic2  >div:nth-child(2){
+            position:absolute;width:100%;top:27%;font-size: 1.253rem;font-weight: 400;left:0;
+        }
+        .carousel-inner .pic2 > div:nth-child(3){
+            position:absolute;width:100%;top:37%;font-size: 1.253rem;font-weight: 300;left:0;
+        }
+        .carousel-inner .pic2 > div:nth-child(4){
+            position:absolute;
+            width:64%;
+            height:30%;
+            /* right:0; */
+            top:56%;
+            left:43%;
+            display:flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+        .carousel-inner .pic2 > div:nth-child(4)>.aBefore{
+            position:relative;
+        }
+        .carousel-inner .pic2 > div:nth-child(4)>.aBefore a{
+            font-size: 0.48rem;
+        }
+        .carousel-inner .pic2 > div:nth-child(4)>.aBefore:last-child{
+            margin-left:0;
+            margin-top:1%;
+        }
+        /* pic3 */
+        .carousel-inner .pic3 img{
+            right:0;
+            text-align: center;
+        }
+        .carousel-inner .pic3 div:nth-child(2){
+            position:absolute;width:100%;top:20%;font-size: 1rem;font-weight: 400;text-align: center;
+        }
+        .carousel-inner .pic3 div:nth-child(3){
+            font-size: 0.5rem;top: 33%;position: absolute;font-weight: 300;width:100%;right:0;text-align: center;
+        }
+        .carousel-inner .pic3 div:nth-child(4){
+            position:absolute;right:0;top:42%;font-size: 0.5rem;font-weight: 300;width:100%;text-align: center;
+        }
+        .carousel-inner .pic3 div:nth-child(5){
+            position:absolute;bottom:15%;width:100%;text-align: center;
+        }
+        /* family */
+        section#dreamlightfamily .filter{
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        section#dreamlightfamily .filter a{
+            width:50%;
+            text-align: center;
+        }
+        section#dreamlightfamily .wrapper .partLeft{
+            display:none;
+        }
+        section#dreamlightfamily .wrapper .partRight{
+            width:100%;
+        }
+        /* mindfulness */
+        #mindfulness .emotion{
+            display:flex;
+            flex-direction: column;            
+        }
+        #mindfulness .emotion img{
+            width:100%;
+        }
+        #mindfulness .emotion img:last-child{
+            margin-left:0;
+            margin-top:10%;
+        }
+        /* mindfulnessNext */
+        #mindfulnessNext .practice img{
+            margin-left:auto;
+            margin-right:auto;
+            width:100%;
+        }
+        /* getApp */
+        #getApp{
+            height:30vh;
+        }
+        #getApp h2{
+            top:0;
+            font-size: 21px;
+        }
+        #getApp .picphone img:first-child{
+            width:50%;
+            bottom:0;
+            left:0;
+        }
+        #getApp .picphone img:last-child{
+            width:50%;
+            right:12%;
+            bottom:0;
+        }
+        #getApp .platforms{
+            display:flex;
+            text-align: center;
+            left:0;
+        }
+    }
         
