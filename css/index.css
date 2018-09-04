@@ -279,25 +279,33 @@
         }
         
         /* footer */
-        #footer>div {
+        @media(min-width:768px){
+            #footer{
+                display: flex;
+                justify-content: space-around;
+            }
+            #footer>div {
             width: 20%;
-        }
+            }
 
-        #footer>div.company div {
-            display: flex;
-            width: 20px;
-            height: 20px;
-            margin: 0;
-        }
+            #footer>div.company div {
+                display: flex;
+                width: 20px;
+                height: 20px;
+                margin: 0;
+            }
 
-        #footer>div.company div a {
-            margin-left: 5px;
-        }
+            #footer>div.company div a {
+                margin-left: 5px;
+            }
 
-        #footer>div.company div img {
-            /* width: 100%;
-            height: 100%; */
+            #footer>div.company div img {
+                /* width: 100%;
+                height: 100%; */
+            }
         }
+        
+
         /* slider库自定义 */
         #myCarousel {
             position: absolute;
@@ -407,7 +415,7 @@
         
         #introDreamlight  p{
             margin:5% auto;
-            text-align: center;
+            /* text-align: center; */
             font-size: 18px;
             font-weight: 400;
         }
@@ -431,7 +439,7 @@
             #introDreamlight  #families > .left,
             #introDreamlight  #families > .right
             {
-                width:90%;
+                width:100%;
                 /* border:1px solid #ccc; */
                 box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.3);                
             }
@@ -602,7 +610,7 @@
         }
         @media (max-width:767px){
             section#partMedia{
-                height:70vh;
+                height:80vh;
                 padding:10% 0;
                 margin-bottom:7vh;               
             }
@@ -723,7 +731,7 @@
             border-color:#FF6E25;
             background-color: transparent;
             border-radius: 3em;
-            padding:5px 25px;
+            padding:0.13rem 0.66rem;
         }
         section#getApp .platforms .btn.btn-primary.active2{
             color:white;
@@ -813,7 +821,7 @@
         margin-left:1%;
     }
     /* pic3 */
-    .carousel-inner .pic3 img{min-width:370px;}
+    /* .carousel-inner .pic3 img{min-width:320px;} */
     .carousel-inner .pic3 div:nth-child(2){
         top:36%;font-size: 64px;font-weight: 400;
     }
@@ -841,6 +849,16 @@
     } */
 
     @media(max-width:768px){
+        h2{
+            font-size: 32px;
+        }
+        h3{
+            font-size: 24px;
+            color:#666;
+        }
+        #mindfulness p{
+            font-size: 17px;
+        }
         /* pic1 */
         .carousel-inner .pic1 div:nth-child(2){
             position:absolute;left:10%;top:32%;font-size: 0.586rem;font-weight: 200;
@@ -909,6 +927,7 @@
         .carousel-inner .pic3 img{
             right:0;
             text-align: center;
+            width:100%;
         }
         .carousel-inner .pic3 div:nth-child(2){
             position:absolute;width:100%;top:20%;font-size: 1rem;font-weight: 400;text-align: center;
@@ -922,6 +941,22 @@
         .carousel-inner .pic3 div:nth-child(5){
             position:absolute;bottom:15%;width:100%;text-align: center;
         }
+        /* part2 */
+        #introDreamlight p{
+            font-size: 17px;
+            font-weight: 300;
+        }
+         #introDreamlight #families p{
+            font-size: 17px;
+            font-weight: 300;
+        }
+        /*
+        #introDreamlight>.container>p.explain{
+            font-size: 17px;
+            font-weight: 300;
+            color:red;
+        } */
+        
         /* family */
         section#dreamlightfamily .filter{
             display:flex;
@@ -938,6 +973,7 @@
         section#dreamlightfamily .wrapper .partRight{
             width:100%;
         }
+        section#dreamlightfamily .textDetail h3{text-align: center;}
         /* mindfulness */
         #mindfulness .emotion{
             display:flex;
@@ -958,26 +994,49 @@
         }
         /* getApp */
         #getApp{
-            height:30vh;
+            height:70vh;
         }
         #getApp h2{
+            width:100%;
             top:0;
-            font-size: 21px;
+            font-size: 32px;
         }
         #getApp .picphone img:first-child{
-            width:50%;
+            width:60%;
             bottom:0;
             left:0;
         }
         #getApp .picphone img:last-child{
-            width:50%;
-            right:12%;
+            width:60%;
+            /* right:12%; */
             bottom:0;
         }
         #getApp .platforms{
             display:flex;
-            text-align: center;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
             left:0;
+        }
+        #getApp .platforms > a:last-child{
+            margin-top:5vh;
+        }
+        /* footer */
+        #footer{
+            display:flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding:5%;
+        }
+        #footer div{
+            width:45%;
+        }
+        #footer div.company{
+            width:100%;
+            
+        }
+        #footer div.company>div{
+            width:100%;
         }
     }
         

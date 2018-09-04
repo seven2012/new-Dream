@@ -20,6 +20,8 @@
             {
                 boxClass: 'wow',      // default
                 animateClass: 'animated', // default
+                duration:'1s',
+                delay:'1s',
                 offset: 0,          // default
                 mobile: true,       // default
                 live: true        // default
@@ -237,7 +239,7 @@
     </section>
 
     <!-- part1 slider1-->
-    <section class="test" style="height:100vh; background: #faf8f2;">
+    <section class="test" id="slider1" style="height:100vh; background: #faf8f2;">
         <div id="myCarousel" class="carousel slide" style="">
             <!-- carousel-indicators样式 = 圆点导航 -->
             <ol class="carousel-indicators">
@@ -270,11 +272,11 @@
                 <!--picture2-->
                 <div class="item pic2" style="">
                     <img class="animated slideInLeft img-responsive" src="./images/tp-hand-slider2.png" alt="Second slide" style="">
-                    <div class="animated slideInDown" style="">
+                    <div class="animated slideInRight" style="">
                         Dreamlight
                         <span style="font-weight: 300">&nbsp;App</span>
                     </div>
-                    <div class="animated slideInRight" style="">
+                    <div class="animated slideInLeft" style="">
                         Download
                     </div>
 
@@ -320,12 +322,11 @@
     <section id="introDreamlight" style="">
         <div class="container">
 
-            <h2 class="wow slideInLeft" style="text-align: center;">What's dreamlight</h2>
-            <p clsss="animated slideInLeft">Dreamlight is a creative smart system to help you get faster enhanced sleep and it can create an ideal atmosphere
-                to help you meditate</p>
+            <h2 class="" style="text-align: center;">What's dreamlight</h2>
+            <p clsss="explain">Dreamlight is a creative smart system to help you get faster enhanced sleep and it can create an ideal atmosphere to help you meditate.</p>
             <div id="families">
 
-                <div class="wow slideInLeft left">
+                <div class="left">
                     <img src="./images/sleep.png" alt="pic1">
                     <div style="padding:10px;">
                         <p>We use three proven effective ways to make users fall asleep faster.</p>
@@ -340,7 +341,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="wow slideInRight right">
+                <div class="right">
                     <img src="./images/meditation.png" alt="pic2">
                     <p style="padding:10px;">Dreamlight Pro is a helpful device to assist your meditation. It’s a perfect fit for your face, keep
                         your eyes open and you will feel that you are in an isolated place. Mindfulness breathing lights
@@ -645,7 +646,7 @@
         </div>
     </section>
     <!-- part7 footer-->
-    <section id="footer" class="test" style="display:flex;justify-content: space-evenly;">
+    <section id="footer" class="test" style="">
         <div class="">
             <h3>About</h3>
             <p>
